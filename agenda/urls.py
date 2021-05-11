@@ -23,5 +23,7 @@ urlpatterns = [
     path('', RedirectView.as_view(url='/agenda/')),# forçando a entrada na pagina index para agenda
     path('login/', views.login_user),
     path('login/submit', views.submit_login),
-    path('logout/', views.logout_user)
+    path('logout/', views.logout_user),
+    path('agenda/evento/', views.evento),
+    path('agenda/evento/submit', views.submit_evento)
 ]
