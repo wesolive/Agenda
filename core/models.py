@@ -16,3 +16,5 @@ class Evento(models.Model):#criando classe evento com os itens
 
     def get_data_criacao(self):# alterando a exibição da data_evento
         return self.data_evento.strftime('%d/%m/%Y %H:%M hrs')
+    def get_data_input_evento(self):
+        return self.data_evento.strftime('%Y-%m-%dT%H:%M')
